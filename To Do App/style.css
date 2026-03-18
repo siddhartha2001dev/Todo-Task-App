@@ -1,0 +1,176 @@
+.headbox {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 60px;
+    background-color: beige;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content {
+    input {
+        width: 280px;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 16px;
+        border: solid 2px black;
+    }
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+.Btn {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: solid 2px black;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Btn:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.output {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.task {
+    width: 350px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgb(255, 246, 230);
+
+    padding: 10px 15px;
+
+    border-radius: 30px;
+}
+
+.taskText {
+    font-size: 15px;
+    color: #333;
+}
+
+.btnGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.delBtn {
+    border: none;
+    background: #ff7474;
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.donebtn{
+    text-decoration: line-through;
+    opacity: 0.4;
+    color: grey;
+}
+
+.BtnDone{
+    border: none;
+    background: #11c600;
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+    .heading {
+        font-size: 40px;
+        background-color: beige;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .content input {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .Btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .task {
+        width: 90%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .taskText {
+        font-size: 14px;
+    }
+
+    .delBtn {
+        padding: 8px 12px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .heading {
+        font-size: 32px;
+        background-color: beige;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    .content input {
+        width: 160px;
+    }
+
+    .task {
+        width: 95%;
+    }
+
+}
